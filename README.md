@@ -99,7 +99,11 @@ Experiment10/
 
 Default screen on first launch (before contacts are loaded):
 
-![App Output](screenshots/output.png)
+<img width="1080" height="2400" alt="test3_intent_handoff" src="https://github.com/user-attachments/assets/b5e42fa9-7af2-44f1-975d-f7d43c0398b7" />
+
+<img width="1080" height="2400" alt="output" src="https://github.com/user-attachments/assets/df78de63-c4b0-4e89-be55-598921c98a3d" />
+
+
 
 ---
 
@@ -111,8 +115,8 @@ Default screen on first launch (before contacts are loaded):
 **Steps:** Fresh install → tap **Load contacts**.
 **Expected:** System dialog "Allow Experiment10 to access your contacts?" appears.
 **Result:** Dialog shown; selecting *Allow* proceeds to load, *Deny* shows a toast.
+<img width="1080" height="2400" alt="test3_intent_handoff" src="https://github.com/user-attachments/assets/b5e42fa9-7af2-44f1-975d-f7d43c0398b7" />
 
-![Test Case 1 — Permission dialog](screenshots/test1_permission.png)
 
 ---
 
@@ -123,8 +127,8 @@ Default screen on first launch (before contacts are loaded):
 
 **Expected:** The ListView renders every device contact as a card. The pill at the top shows the live count (e.g. `13 contacts`). The row for *Maheep Singh Saluja* shows the avatar initial **M**, the full name, and the USN `25MCAR0105` beneath it.
 **Result:** All contacts load alphabetically; the `Maheep Singh Saluja / 25MCAR0105` row is visible in the list.
+<img width="1080" height="2400" alt="test2_usn_name" src="https://github.com/user-attachments/assets/b808ce39-6ca7-4e34-95d8-a69d811d62e2" />
 
-![Test Case 2 — Contacts list showing USN 25MCAR0105 and name Maheep Singh Saluja](screenshots/test2_usn_name.png)
 
 ---
 
@@ -132,8 +136,8 @@ Default screen on first launch (before contacts are loaded):
 **Steps:** From the loaded list, tap any contact row.
 **Expected:** An implicit `Intent(ACTION_VIEW, content://com.android.contacts/contacts/<id>)` is fired; the system **Contacts** app opens on that contact's detail page.
 **Result:** System Contacts app opens showing the selected contact — confirming the Content Provider URI was successfully shared across apps.
+<img width="1080" height="2400" alt="test1_permission" src="https://github.com/user-attachments/assets/421ae836-e45e-4541-b9c9-1da52557df68" />
 
-![Test Case 3 — System Contacts opened via Intent](screenshots/test3_intent_handoff.png)
 
 ---
 
@@ -149,3 +153,4 @@ Min SDK and target SDK are set in `app/build.gradle.kts`.
 ---
 
 **Submitted by:** Maheep Singh Saluja — **USN:** 25MCAR0105
+
