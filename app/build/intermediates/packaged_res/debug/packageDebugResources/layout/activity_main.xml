@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/surface"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="28dp"
+    android:paddingBottom="20dp">
+
+    <!-- Header -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textColor="@color/text_primary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:letterSpacing="-0.02" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared from the system Content Provider"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:paddingTop="4dp"
+        android:paddingBottom="22dp" />
+
+    <!-- Load button -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loadContactsButton"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Load contacts"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        app:cornerRadius="14dp" />
+
+    <!-- Count pill + hint -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="14dp">
+
+        <TextView
+            android:id="@+id/contactsCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/count_pill_background"
+            android:text="0 contacts"
+            android:textColor="@color/accent_on_container"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tap to open in Contacts"
+            android:textColor="@color/text_tertiary"
+            android:textSize="12sp"
+            android:gravity="end" />
+    </LinearLayout>
+
+    <!-- List -->
+
+    <ListView
+        android:id="@+id/contactsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:paddingTop="2dp"
+        android:paddingBottom="12dp" />
+
+</LinearLayout>

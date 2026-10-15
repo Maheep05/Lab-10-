@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_container">#EADDFF</color>
+    <color name="accent_on_container">#21005D</color>
+    <color name="accent_primary">#6750A4</color>
+    <color name="avatar_1_bg">#FFE1E6</color>
+    <color name="avatar_1_fg">#8E1F3B</color>
+    <color name="avatar_2_bg">#E1EEFF</color>
+    <color name="avatar_2_fg">#1F3C7A</color>
+    <color name="avatar_3_bg">#E4F4E4</color>
+    <color name="avatar_3_fg">#2A5F2A</color>
+    <color name="avatar_4_bg">#FFF3DC</color>
+    <color name="avatar_4_fg">#7A4A17</color>
+    <color name="avatar_5_bg">#F0E4FF</color>
+    <color name="avatar_5_fg">#4B2A82</color>
+    <color name="black">#FF000000</color>
+    <color name="outline_subtle">#E6DFEB</color>
+    <color name="surface">#FBF9FC</color>
+    <color name="surface_container">#F3EEF7</color>
+    <color name="text_primary">#1D1B20</color>
+    <color name="text_secondary">#625B71</color>
+    <color name="text_tertiary">#8A8395</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Experiment10</string>
+    <style name="Base.Theme.Experiment10" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Experiment10" parent="Base.Theme.Experiment10"/>
+</resources>
